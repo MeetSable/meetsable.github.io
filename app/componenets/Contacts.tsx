@@ -1,12 +1,11 @@
 "use client"
 
-import { unique } from "next/dist/build/utils"
-import bioCard, { Link } from "../data/bioCard"
-import { Link } from "lucide-react"
+import bioCard, { LinkType } from "../data/bioCard"
+import Link from 'next/link'
 
 export default function Contacts() {
 
-    const contactsList : Link[] = [
+    const contactsList : LinkType[] = [
         bioCard.phone, bioCard.email, ...bioCard.socials
     ]
 
@@ -15,12 +14,12 @@ export default function Contacts() {
             <div className="p-1 col-span-1">How to reach me: </div>
             <div className="col-span-8 overflow-hidden p-2 flex bg-white">
                 <ul className="flex gap-10 animate-infinite-scroll">
-                    {[...contactsList, ...contactsList, ...contactsList, ...contactsList, ...contactsList].map((contact: Link, key) => {
+                    {[...contactsList, ...contactsList, ...contactsList, ...contactsList, ...contactsList].map((contact: LinkType, key) => {
                         return (
                             <li className="px-1 gap-2 text-black" key={key}>
-                                <a href={contact.link}>
+                                <Link href={contact.link}>
                                     {contact.name ?? contact.platform}
-                                </a>
+                                </Link>
                             </li>
                         )
                     })}

@@ -1,5 +1,5 @@
 
-export type Link = {
+export type LinkType = {
     platform: string;
     name?: string;
     link: string;
@@ -7,9 +7,9 @@ export type Link = {
 
 export type BioCard = {
     name: string;
-    phone: Link;
-    email: Link;
-    socials: Link[];
+    phone: LinkType;
+    email: LinkType;
+    socials: LinkType[];
     punchline: string;
 }
 
