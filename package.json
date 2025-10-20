@@ -6,13 +6,18 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "eslint . --ext .js,.jsx,.ts,.ts",
+    "lint:fix": "eslint --fix **/*.ts **/*.tsx",
     "export": "next export"
   },
   "dependencies": {
+    "framer-motion": "^12.23.22",
+    "lucide-react": "^0.544.0",
     "next": "15.5.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "sass": "^1.93.2",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -23,8 +28,8 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
     "gh-pages": "^6.3.0",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.1.14",
     "typescript": "^5"
   },
-  "homepage": "https://meetsable.github.io/meet.shell"
+  "homepage": "https://meetsable.github.io"
 }

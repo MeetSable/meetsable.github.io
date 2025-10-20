@@ -1,12 +1,11 @@
-"use client";
+"use client"
 
-import "./globals.css";
-import Portfolio from "./Portfolio";
+import Bio from "./componenets/Bio";
 
-export default function RootLayout() {
+export default function Home() {
   return (
-    <div>
-        <Portfolio/>
-    </div>
+    <main className="flex  flex-col items-center justify-center py-20 px-20">
+      <Bio/>
+    </main>
   );
 }
