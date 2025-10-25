@@ -1,11 +1,13 @@
 "use client"
 
 import Bio from "./componenets/Bio";
+import Contacts from "./componenets/Contacts";
 
 export default function Home() {
   return (
-    <main className="flex  flex-col items-center justify-center py-20 px-20">
+    <>
+      <Contacts/>
       <Bio/>
-    </main>
+    </>
   );
 }

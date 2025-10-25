@@ -40,7 +40,7 @@ const bioCard: BioCard = {
         }
 
     ],
-    punchline: "Hello There, I am Meet Sable. A curious software developer. I work as software engineer at AbeBooks, An Amazon Company. " +
+    punchline: "Hello There, I am <b><u>Meet Sable</u></b>. A curious software developer. I work as software engineer at AbeBooks, An Amazon Company. " +
     "I have done Masters in Applied Computing at WLU and Bachelors of Technology in Information and Communication Technology with minors in " +
     "Computational Science :) at DAIICT. I enjoy solving puzzles and build stuff, so for now Programming aligns very much with what I want. " +
     "In my free time, I watch long youtube videos (some about coding and some about random things), play video games, listen to music and if " +

@@ -10,13 +10,13 @@ export default function Contacts() {
     ]
 
     return (
-        <div className="px-2 py-4 font-display font-extrabold text-2xl grid grid-cols-9 bg-black text-white">
-            <div className="p-1 col-span-1">How to reach me: </div>
-            <div className="col-span-8 overflow-hidden p-2 flex bg-white">
+        <div className="p-2 fixed flex font-display font-extrabold text-sm lg:text-xl bg-black text-white">
+            <div className="min-w-fit mr-2">How to reach me: </div>
+            <div className="flex overflow-hidden bg-white ">
                 <ul className="flex gap-10 animate-infinite-scroll">
                     {[...contactsList, ...contactsList, ...contactsList, ...contactsList, ...contactsList].map((contact: LinkType, key) => {
                         return (
-                            <li className="px-1 gap-2 text-black" key={key}>
+                            <li className="gap-2 text-black" key={key}>
                                 <Link href={contact.link}>
                                     {contact.name ?? contact.platform}
                                 </Link>

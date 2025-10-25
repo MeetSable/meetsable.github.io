@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Contacts from "./componenets/Contacts";
 
 export const metadata: Metadata = {
   title: "My Portfolio",
   description: "A statically exported Next.js portfolio.",
 };
+
 
 export default function RootLayout({
   children,
@@ -14,10 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-display">
-        <Contacts/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <body className="font-display bg-black">
         {children}
-        </body>
+      </body>
     </html>
   );
 }
