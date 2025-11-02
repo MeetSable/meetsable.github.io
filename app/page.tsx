@@ -2,7 +2,7 @@
 
 import Bio from "./componenets/Bio";
 import Contacts from "./componenets/Contacts";
-import WorkExperiences from "./componenets/WorkExperiences";
+// import WorkExperiences from "./componenets/WorkExperiences";
 
 export default function Home() {
   return (
